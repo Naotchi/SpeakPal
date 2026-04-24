@@ -64,19 +64,21 @@ export const SCENARIOS: Scenario[] = [
     speakerName: "Alex",
   },
   {
-    id: "asking-directions",
-    label: "道を尋ねる",
+    id: "giving-directions",
+    label: "観光客に道を尋ねられる",
     emoji: "🗺️",
-    description: "街中で目的地までの行き方を聞く",
+    description: "街中で観光客に呼び止められ、目的地までの行き方を英語で案内する",
     promptSnippet:
-      "You are a local passerby in an English-speaking city. " +
-      "The user is a Japanese tourist who stops you to ask for directions. " +
-      "Listen to where they want to go, then give directions naturally " +
-      "(turns, landmarks, approximate distance). " +
-      "Feel free to suggest public transit if it's easier. Stay friendly and in role.",
+      "You are a foreign tourist visiting an English-speaking city where the user lives. " +
+      "You are a bit lost and just stopped the user on the street to ask for directions " +
+      "to a specific landmark (pick one naturally — train station, a famous museum, a well-known park, etc.). " +
+      "The user is a local resident helping you in English. " +
+      "Listen to their directions, ask natural follow-up questions if something is unclear " +
+      "(distance, which side of the street, whether you can walk or should take transit), " +
+      "and thank them naturally when you understand. Stay in role as the tourist.",
     starter:
-      "Oh, hi! You look a bit lost — do you need some help finding something?",
-    speakerName: "Local",
+      "Excuse me, sorry to bother you — do you happen to know how to get to the train station from here?",
+    speakerName: "Tourist",
   },
 ];
 

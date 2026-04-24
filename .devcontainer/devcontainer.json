@@ -1,0 +1,8 @@
+{
+    "name": "SpeakPal dev",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "dev",
+    "workspaceFolder": "/workspaces/SpeakPal"
+}

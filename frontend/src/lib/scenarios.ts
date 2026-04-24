@@ -22,9 +22,9 @@ export const SCENARIOS: Scenario[] = [
   },
   {
     id: "airport-checkin",
-    label: "空港チェックイン",
+    label: "空港の係員に案内される",
     emoji: "🛫",
-    description: "海外空港のカウンターで搭乗手続き",
+    description: "海外空港のカウンターで係員に搭乗手続きを進めてもらう",
     promptSnippet:
       "You are a check-in agent at an international airport counter. " +
       "The user is a Japanese traveler checking in for an international flight. " +
@@ -37,9 +37,9 @@ export const SCENARIOS: Scenario[] = [
   },
   {
     id: "restaurant-order",
-    label: "レストランで注文",
+    label: "レストランで店員に声をかけられる",
     emoji: "🍽️",
-    description: "海外のレストランで料理を注文する",
+    description: "海外のレストランで店員に注文をとってもらう",
     promptSnippet:
       "You are a friendly server at a mid-range restaurant abroad. " +
       "The user is a Japanese customer who just sat down. " +
@@ -51,9 +51,9 @@ export const SCENARIOS: Scenario[] = [
   },
   {
     id: "self-intro",
-    label: "初対面の自己紹介",
+    label: "パーティで話しかけられる",
     emoji: "👋",
-    description: "初めて会った相手と自己紹介を交わす",
+    description: "初対面の相手から声をかけられ、自己紹介を交わす",
     promptSnippet:
       "You are meeting the user for the first time at a casual social setting " +
       "(a party, a meetup, or an international event). " +

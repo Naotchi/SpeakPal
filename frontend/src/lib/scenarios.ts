@@ -64,21 +64,6 @@ export const SCENARIOS: Scenario[] = [
     speakerName: "Alex",
   },
   {
-    id: "pto-negotiation",
-    label: "上司に有給を交渉",
-    emoji: "📅",
-    description: "休暇を取りたいと上司に相談する",
-    promptSnippet:
-      "You are the user's manager at an English-speaking workplace. " +
-      "The user wants to request paid time off. " +
-      "Hear them out, ask about dates, workload coverage, and any deadlines, " +
-      "and negotiate naturally — be reasonable but realistic about business constraints. " +
-      "Stay in role as the manager.",
-    starter:
-      "Hey, you wanted to chat? Come on in — what's on your mind?",
-    speakerName: "Manager",
-  },
-  {
     id: "asking-directions",
     label: "道を尋ねる",
     emoji: "🗺️",

@@ -22,9 +22,9 @@ export const SCENARIOS: Scenario[] = [
   },
   {
     id: "airport-checkin",
-    label: "空港チェックイン",
+    label: "空港の係員に案内される",
     emoji: "🛫",
-    description: "海外空港のカウンターで搭乗手続き",
+    description: "海外空港のカウンターで係員に搭乗手続きを進めてもらう",
     promptSnippet:
       "You are a check-in agent at an international airport counter. " +
       "The user is a Japanese traveler checking in for an international flight. " +
@@ -37,9 +37,9 @@ export const SCENARIOS: Scenario[] = [
   },
   {
     id: "restaurant-order",
-    label: "レストランで注文",
+    label: "レストランで店員に声をかけられる",
     emoji: "🍽️",
-    description: "海外のレストランで料理を注文する",
+    description: "海外のレストランで店員に注文をとってもらう",
     promptSnippet:
       "You are a friendly server at a mid-range restaurant abroad. " +
       "The user is a Japanese customer who just sat down. " +
@@ -51,9 +51,9 @@ export const SCENARIOS: Scenario[] = [
   },
   {
     id: "self-intro",
-    label: "初対面の自己紹介",
+    label: "パーティで話しかけられる",
     emoji: "👋",
-    description: "初めて会った相手と自己紹介を交わす",
+    description: "初対面の相手から声をかけられ、自己紹介を交わす",
     promptSnippet:
       "You are meeting the user for the first time at a casual social setting " +
       "(a party, a meetup, or an international event). " +
@@ -64,34 +64,21 @@ export const SCENARIOS: Scenario[] = [
     speakerName: "Alex",
   },
   {
-    id: "pto-negotiation",
-    label: "上司に有給を交渉",
-    emoji: "📅",
-    description: "休暇を取りたいと上司に相談する",
-    promptSnippet:
-      "You are the user's manager at an English-speaking workplace. " +
-      "The user wants to request paid time off. " +
-      "Hear them out, ask about dates, workload coverage, and any deadlines, " +
-      "and negotiate naturally — be reasonable but realistic about business constraints. " +
-      "Stay in role as the manager.",
-    starter:
-      "Hey, you wanted to chat? Come on in — what's on your mind?",
-    speakerName: "Manager",
-  },
-  {
-    id: "asking-directions",
-    label: "道を尋ねる",
+    id: "giving-directions",
+    label: "観光客に道を尋ねられる",
     emoji: "🗺️",
-    description: "街中で目的地までの行き方を聞く",
+    description: "街中で観光客に呼び止められ、目的地までの行き方を英語で案内する",
     promptSnippet:
-      "You are a local passerby in an English-speaking city. " +
-      "The user is a Japanese tourist who stops you to ask for directions. " +
-      "Listen to where they want to go, then give directions naturally " +
-      "(turns, landmarks, approximate distance). " +
-      "Feel free to suggest public transit if it's easier. Stay friendly and in role.",
+      "You are a foreign tourist visiting an English-speaking city where the user lives. " +
+      "You are a bit lost and just stopped the user on the street to ask for directions " +
+      "to a specific landmark (pick one naturally — train station, a famous museum, a well-known park, etc.). " +
+      "The user is a local resident helping you in English. " +
+      "Listen to their directions, ask natural follow-up questions if something is unclear " +
+      "(distance, which side of the street, whether you can walk or should take transit), " +
+      "and thank them naturally when you understand. Stay in role as the tourist.",
     starter:
-      "Oh, hi! You look a bit lost — do you need some help finding something?",
-    speakerName: "Local",
+      "Excuse me, sorry to bother you — do you happen to know how to get to the train station from here?",
+    speakerName: "Tourist",
   },
 ];
 

@@ -21,7 +21,7 @@ SpeakPal は backend（FastAPI）と frontend（Next.js）の2サービス構成
 
 ## 非目標（Non-goals）
 
-- 本番 Dockerfile の整理（dev-dep 除去、multi-stage、イメージサイズ削減）— 別 RFC
+- 本番 Dockerfile の整理（dev-dep 除去、multi-stage、イメージサイズ削減）— 別 spec/plan
 - CI への devcontainer 統合 — 別タスク
 - IDE 固有設定（`customizations.vscode` など）— 使わないので入れない
 - Windows / macOS での動作検証 — Linux 前提
@@ -178,6 +178,6 @@ devcontainer up --workspace-folder .
 
 ## 今後の派生タスク（本 spec の外）
 
-- 本番 Dockerfile 整理 RFC（dev-dep 除去、multi-stage、イメージサイズ削減）
+- 本番 Dockerfile 整理 spec/plan（dev-dep 除去、multi-stage、イメージサイズ削減）
 - CI 整備（GitHub Actions から `just test` 相当を起動）
 - devcontainer の macOS / Windows 対応検証（必要になった段階で）

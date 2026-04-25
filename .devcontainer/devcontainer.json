@@ -13,5 +13,6 @@
     "forwardPorts": [3000, 8000],
     "containerEnv": {
         "SHELL": "/bin/zsh"
-    }
+    },
+    "postCreateCommand": "bash -lc 'sudo pip install -r backend/requirements-dev.txt && npm --prefix frontend install && npm install -g @anthropic-ai/claude-code'"
 }

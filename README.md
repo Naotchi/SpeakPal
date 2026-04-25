@@ -55,7 +55,7 @@ docker compose up --build
 | [docs/directory-structure.md](./docs/directory-structure.md) | リポジトリのディレクトリ構成と配置ルール |
 | [docs/data-flow.md](./docs/data-flow.md) | 音声入力から音声応答までのシーケンス |
 | [docs/development.md](./docs/development.md) | 開発環境のセットアップと日々の作業手順 |
-| [docs/rfcs/](./docs/rfcs/) | Request for Comments (新機能の提案と実装計画) |
+| [docs/superpowers/](./docs/superpowers/) | superpowers skills の成果物 (新機能の spec と実装計画) |
 | [docs/adr/](./docs/adr/) | Architecture Decision Records (設計判断の履歴) |
 
 ### ドキュメント運用方針

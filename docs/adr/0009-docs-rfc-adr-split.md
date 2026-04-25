@@ -1,6 +1,6 @@
 # 0009. ドキュメント運用を Overview / RFC / ADR の 3 層に分ける
 
-- Status: Accepted
+- Status: Superseded by [0010](./0010-drop-rfc-layer-for-superpowers.md)
 - Date: 2026-04-25
 - Deciders: naoki
 

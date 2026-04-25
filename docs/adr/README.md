@@ -41,4 +41,5 @@ SpeakPal の設計判断を時系列で記録する場所。
 | [0006](./0006-webm-opus-recording.md) | 録音は webm/opus、サーバで WAV 変換 | Accepted |
 | [0007](./0007-single-chat-endpoint.md) | フロントとの結合点は `/api/chat` 1 本 | Accepted |
 | [0008](./0008-pytest-local-testing.md) | 自動テストは pytest で backend から段階導入する | Accepted |
-| [0009](./0009-docs-rfc-adr-split.md) | ドキュメント運用を Overview / RFC / ADR の 3 層に分ける | Accepted |
+| [0009](./0009-docs-rfc-adr-split.md) | ドキュメント運用を Overview / RFC / ADR の 3 層に分ける | Superseded by [0010](./0010-drop-rfc-layer-for-superpowers.md) |
+| [0010](./0010-drop-rfc-layer-for-superpowers.md) | RFC 層を廃止し superpowers/specs+plans に一本化する | Accepted |

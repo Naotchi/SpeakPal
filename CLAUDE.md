@@ -89,13 +89,13 @@ Frontend (`frontend/.env.local`, see `.env.local.example`):
 
 ## Documentation workflow
 
-Docs are split into 3 roles — see [docs/README.md](docs/README.md) for the routing rule:
+Docs are organized in 3 places — see [docs/README.md](docs/README.md) for the routing rule:
 
 - `docs/*.md` (flat) — **Overview**: live description of the current system. Update in the same PR as code changes
-- `docs/rfcs/` — **RFC**: forward-looking proposals for new features. Contains Spec + Plan sections; this is where `/brainstorming` and `/writing-plans` outputs land
+- `docs/superpowers/specs/` and `docs/superpowers/plans/` — **Spec / Plan**: outputs of `/brainstorming` and `/writing-plans`. Filename is `YYYY-MM-DD-<slug>.md`; spec and plan share the same slug and link to each other
 - `docs/adr/` — **ADR**: records of architectural decisions (Michael Nygard format). Never rewritten; supersede by creating a new ADR
 
-New feature work starts with an RFC in `docs/rfcs/NNNN-<slug>.md`. When an RFC is Accepted and contains a decision with long-term reach (library choice, API contract, infra), spawn an ADR and link them.
+New feature work follows the superpowers workflow: `/brainstorming` → spec, `/writing-plans` → plan, `/executing-plans` (with `superpowers:test-driven-development`) → implementation. When a spec contains a decision with long-term reach (library choice, API contract, infra), spawn an ADR and link them.
 
 ## Testing approach
 
